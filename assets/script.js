@@ -5,6 +5,12 @@ const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 const secondQuestion = document.querySelectorAll(".question")[1];
 
+yesBtn.onclick = () => {
+  if(img.src === "https://raw.githubusercontent.com/DzarelDeveloper/Img/main/AskCrush1.png") {
+    window.open('https://wa.me/6285648888656', '_blank');
+  }
+}
+
 yesBtn.addEventListener("click", () => {
   question.innerHTML = "I like you Dhilaa";
   secondQuestion.innerHTML = "How about you?";
